@@ -1,0 +1,25 @@
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class CreateAccountServlet extends HttpServlet{
+	public void doPost(HttpServletRequest req,HttpServletResponse res) {
+		res.setContentType("text/html");
+		String fname = req.getParameter("fname");
+		String lname=req.getParameter("lname");
+		String email=req.getParameter("email");
+		String adress=req.getParameter("address");
+		String branch=req.getParameter("branch");
+		String num= req.getParameter("number");
+		String gender=req.getParameter("gender");
+		
+		
+		
+
+		}
+	
+	
+	
+	
+
+}

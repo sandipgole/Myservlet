@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+adding number
+
+</head>
+<body>
+<form action="">
+Enter first number:<input type="text" name="num1"><br>
+Enter Second number:<input type ="text" name="num2">
+
+
+</form>
+
+
+
+
+</body>
+</html>

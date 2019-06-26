@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>LoginPage</title>
+</head>
+<body>
+Welcome to Official page of gOle Bank<br><br>
+<form action="./gole" methode="get">
+Username: <input type="text" name="un" required="required"><br><br>
+Password: <input type="password" name="pw" required="required"><br><br>
+<input type="submit" value="Login">
+<input type="button" value="signup" href="SignUp.html">
+
+
+</form>
+</body>
+</html>

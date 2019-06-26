@@ -1,0 +1,9 @@
+import javax.servlet.http.HttpServlet;
+
+public class LoginServlet extends HttpServlet {
+	public void doPost(HttpServletRequest req,HttpServletResponse res)
+	{
+		
+	}
+
+}

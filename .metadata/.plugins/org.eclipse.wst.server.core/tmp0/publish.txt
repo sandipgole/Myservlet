@@ -1,0 +1,6 @@
+#Tomcat publish data
+#Wed Jun 26 07:38:37 NPT 2019
+org.eclipse.jst.jee.server\:Loginwebdemo=C\:\\Users\\sandip\\Desktop\\Tomcat\\apache-tomcat-9.0.21\\apache-tomcat-9.0.21\\wtpwebapps\\Loginwebdemo
+org.eclipse.jst.jee.server\:Calculator=C\:\\Users\\sandip\\Desktop\\Tomcat\\apache-tomcat-9.0.21\\apache-tomcat-9.0.21\\wtpwebapps\\Calculator
+org.eclipse.jst.jee.server\:WebATM=C\:\\Users\\sandip\\Desktop\\Tomcat\\apache-tomcat-9.0.21\\apache-tomcat-9.0.21\\wtpwebapps\\WebATM
+org.eclipse.jst.jee.server\:HelloWorldAgain=C\:\\Users\\sandip\\Desktop\\Tomcat\\apache-tomcat-9.0.21\\apache-tomcat-9.0.21\\wtpwebapps\\HelloWorldAgain

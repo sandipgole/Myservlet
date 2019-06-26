@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>signup form request</title>
+</head>
+<body>
+<form action="./signup" methode="Post">
+FirstName:<input type="text" name="fname">
+
+
+
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>signup form request</title>
+</head>
+<body>
+<form action="./signup" methode="Post">
+FirstName:<input type="text" name="fname"><br><br>
+LastName:<input type="text" name="lname"><br><br>
+Email:<input type="email" name ="email"><br><br>
+Address:<input type="text" name="address"><br><br>
+Branch:<input type="text" name ="branch"><br><br>
+phone:<input type ="number" name="number"><br><br>
+ <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other  
+
+
+
+
+
+</form>
+
+</body>
+</html>

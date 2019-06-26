@@ -1,0 +1,63 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.Scanner;
+
+public class Transfer {
+public static void dotransfer() throws Exception
+{
+	String url ="jdbc:mysql://localhost:3306/atm";
+	String uname="root";
+	String pass ="";
+	Class.forName("com.mysql.cj.jdbc.Driver");
+	Connection con0=DriverManager.getConnection(url,uname,pass);
+	Statement st0=con0.createStatement();
+	Scanner sc0 =new Scanner(System.in);
+	try
+	{
+	       System.out.println("Enter Your Account number\n");
+	       int aco1=sc0.nextInt();
+	       String qry0="select available from available where Acno="+aco1+"";
+	       ResultSet rs0=st0.executeQuery(qry0);
+	       rs0.next();
+	       int tavo=rs0.getInt("available");
+	       System.out.println("YOur Available amount: "+tavo);
+	       try {
+	    	     Connection con1=DriverManager.getConnection(url,uname,pass);
+	    		 Statement st1=con1.createStatement();
+	    		 Scanner sc1 =new Scanner(System.in);
+	             System.out.println("Enter Destination Account Number\n");
+	             int aco2=sc1.nextInt();
+	             System.out.println("Enter Send Amount\n");
+	             int samount=sc1.nextInt();
+	             if(samount<=tavo)
+	             {
+	             String sql="Insert into sendamount(Acno,amount)values("+aco1+","+samount+")";
+	             st1.executeUpdate(sql);
+	             String sql1="Insert into  receiveamount (Acno,amount)values("+aco2+","+samount+")";
+	             st1.executeUpdate(sql1);
+	             System.out.println("Trasnfer Successfull to Account number"+aco2);
+	             }
+	             else 
+	             {
+	            	 System.out.println("Insufficient amount to transfer try again");
+	             }
+	       		}
+	       catch(Exception e)
+	       		 {
+		             System.out.println("Destination Account number is Incorrect try again");
+	             }
+	
+	}
+	catch(Exception e)
+	{
+		   System.out.println("Account number incorrect try again");
+    }
+	
+
+	
+	
+	
+}
+}

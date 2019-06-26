@@ -1,0 +1,14 @@
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class LoginServlet extends HttpServlet {
+	public void doPost(HttpServletRequest req,HttpServletResponse res)
+	{
+		res.setContentType("text/html");
+		String un=req.getParameter("un");
+		String pw=req.getParameter("pw");
+		
+	}
+
+}
